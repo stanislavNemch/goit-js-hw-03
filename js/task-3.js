@@ -1,5 +1,13 @@
 function filterArray(numbers, value) {
+    // Перевіряємо, чи масив чисел не порожній
+    if (numbers.length === 0) {
+        return [];
+    }
+    // Створюємо новий масив для відфільтрованих чисел
     const filteredNumbers = [];
+    // Перебираємо масив чисел
+    // і додаємо до нового масиву тільки ті числа,
+    // які більші за передане значення
     for (const number of numbers) {
         if (number > value) {
             filteredNumbers.push(number);
